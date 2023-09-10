@@ -6,7 +6,7 @@ Please select the type of changes you're introducing to the codebase:
 - [ ] Bug fix
 - [ ] Refactor
 - [ ] Documentation
-- [ ] Other (please specify)
+- [ ] Other
 
 ## Overview
 - 
