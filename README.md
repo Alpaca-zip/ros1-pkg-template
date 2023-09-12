@@ -44,9 +44,8 @@ $ sudo apt-get install clang clang-tidy
 ```
 **2. Format with Clang-Tidy**
 ```
-$ catkin build <this_package> --cmake-args -DCMAKE_EXPORT_COMPILE_COMMANDS=1
-$ cp ~/<your_ros_workspace>/build/<this_package>/compile_commands.json <path_of_this_package>/
-$ roscd <this_package> && clang-tidy ./src/<your_cpp>.cpp -p=./ -fix
+$ cd <path_to_your_workspace> && catkin build <this_package> --cmake-args -DCMAKE_EXPORT_COMPILE_COMMANDS=1
+$ clang-tidy -p build/<this_package>/ <path_to_this_package>/src/<your_cpp> -fix
 ```
   Recommended tool : [catkin_tidy](https://github.com/nyxrobotics/catkin_tidy)
 ### Black
